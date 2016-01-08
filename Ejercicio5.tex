@@ -1,0 +1,107 @@
+\documentclass{beamer}
+\usepackage[spanish ]{babel}
+\usepackage{multicol} % indice en 2 columnas
+\usetheme{Warsaw}
+\usecolortheme{crane}
+\useoutertheme{shadow}
+\useinnertheme{rectangles}
+
+\setbeamertemplate{navigation symbols}{} % quitar simbolitos
+
+\title[Animales]{Animales de todo tipo}
+\subtitle{Dando nombres a los animales}
+\author[Adan, Eva, Serpiente]
+{A. Adán$^{1}$ \and E. Eva$^{2}$ \and S. Serpiente$^{3}$}
+\institute[EDEN \& HELL]
+{
+  $^{1-2}$
+  Universidad de Edén\\
+  Al lado del manzano, Paraíso
+  \and
+  $^{3}$
+  Universidad del Infierno\\
+  Inframundo, 666, Tierra
+  \and
+  \texttt{\{$^{1}$eva, $^{2}$adan\}@paraiso.com, $^{3}$serpiente@infierno.com}
+}
+\date{\today}
+
+\AtBeginSection{
+\begin{frame}
+  \frametitle{Indice}
+  \tableofcontents[currentsection]  
+\end{frame}
+}
+
+\AtBeginSubsection{
+\begin{frame}
+  \frametitle{Indice}
+  \tableofcontents[currentsection,currentsubsection]
+\end{frame}
+}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Indice}
+\tableofcontents
+\end{frame}
+
+\section{Animales}
+\subsection{Marsupiales}
+
+\begin{frame}
+  \frametitle{Marsupiales}
+  \begin{block}{Marsupiales en Australia}
+  Koala, Canguro, Wombat...
+  \end{block}
+      
+  \begin{block}{Marsupiales fuera de Australia}
+  Oposum, Zarigüella...
+  \end{block}
+\end{frame}
+
+\subsection{Marinos}
+
+\begin{frame}
+  \frametitle{Mamíferos marinos}
+  \begin{columns}[t]
+    \column{0.5\textwidth}
+    Algunos mamíferos marinos:
+  
+    Ballena, Narval, Cachalote...
+
+    \column{0.5\textwidth}
+    Y algunos más:
+  
+    Morsa, León marino, Foca...
+  \end{columns}
+\end{frame}
+
+\subsection{Preguntas}
+
+\begin{frame}
+  \frametitle{Preguntas}
+  \begin{itemize}
+  \item \alert<1>{¿Cuáles ponen huevos?}
+  \item \alert<3>{¿Cuáles tienen veneno?}
+  \end{itemize}
+      
+  Armadillo, \alert<2,4>{Ornitorrinco}, \alert<2>{Equidna}, Pangolín, Erizo.
+\end{frame}
+
+\section{Plantas}
+\subsection{Flores}
+
+\begin{frame}
+  \frametitle{Flores}
+  \begin{itemize}
+  \item<1->{Rosa}
+  \item<2->{Azucena}
+  \item<3->{Margarita}
+  \end{itemize}
+\end{frame}
+ 
+\end{document}
