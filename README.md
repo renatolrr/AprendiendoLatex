@@ -6,6 +6,7 @@ Ejercicios de Latex:
 2. Cómo escribir una tesis con LaTeX  
 3. Cómo escribir la portada de tu tesis con LaTeX  
 4. Cómo hacer un curriculum con LaTeX  
-5. Presenatciones (beamer)  
+5. Presenatciones (beamer) 
+6. Conceptos básicos de formateado de texto  
 
 
