@@ -17,13 +17,14 @@ Línea en blanco antes de fórmulas, listas, etc.
 ...un texto que antecede a una fórmula aislada:
 %
 \[ E = mc^2 \]
-  
+```  
 
 #Latex Error Classes
 
 ##Ambiguous Errors
 
 This is a list of error classes with ambiguos error messages. Here either the errors are have different causes and the message output is same or else the errors have the same root cause but the messages are different.
+  
 S.No 	Class 	Error Message 	Cause of Error
 1 	e_des 	! LaTeX Error: There's no line here to end 	Usage of \\ at the end of a long label in 'description' environment
 2 	e_center 	! LaTeX Error: There's no line here to end 	Usage of \\ after the heading line in 'center' environment
@@ -51,7 +52,9 @@ S.No 	Class 	Error Message 	Cause of Error
 24 	e_large_count 	 ! LaTeX Error: Counter too large. 	Trying to display a corresponding letter for a counter vallue >26
 25 	e_begin 	! LaTeX Error: Missing \begin{document} 	Either text has been placed before \begin{document} or \begin{document} is missing
 26 	e_margin 	 ! LaTeX Error: Missing \begin{document}. 	Misuse of \marginsize
-##Common Errors
+  
+##Common Errors  
+  
 S.No 	Class 	Error Message 	Cause of Error
 1 	e_fileEnd 	! File ended while scanning use of \end. 	Generally caused because of missing a brace
 2 	e_end 	No message only an asterisk, i.e * 	Missing \end{document}
