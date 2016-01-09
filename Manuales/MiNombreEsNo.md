@@ -24,7 +24,7 @@ Línea en blanco antes de fórmulas, listas, etc.
 ##Ambiguous Errors
 
 This is a list of error classes with ambiguos error messages. Here either the errors are have different causes and the message output is same or else the errors have the same root cause but the messages are different.
-```  
+   
 S.No | 	Class 	| Error Message 	| Cause of Error
 1| 	e_des 	|  LaTeX Error: There's no line here to end 	|Usage of \\ at the end of a long label in 'description' environment
 2| 	e_center 	|  LaTeX Error: There's no line here to end 	|Usage  of \\ after the heading line in 'center' environment
@@ -52,11 +52,11 @@ S.No | 	Class 	| Error Message 	| Cause of Error
 24| 	e_large_count 	 |  LaTeX Error: Counter too large. 	|Trying to display a corresponding letter for a counter vallue >26
 25| 	e_begin 	|  LaTeX Error: Missing \begin{document} 	|Either text has been placed before \begin{document} or \begin{document} is missing
 26| 	e_margin 	 |  LaTeX Error: Missing \begin{document}. 	|Misuse of \marginsize
-```
+
   
 ##Common Errors  
   
-```
+
 S.No 	| Class 	| Error Message 	| Cause of Error
 1| 	e_fileEnd 	|  File ended while scanning use of \end. 	|Generally caused because of missing a brace
 2| 	e_end 	No message only an asterisk, i.e * 	|Missing  \end{document}
@@ -89,7 +89,7 @@ S.No 	| Class 	| Error Message 	| Cause of Error
 29| 	e_line_arg 	 |  LaTeX Error: Bad \line or \vector argument. 	|Bad \line parameter
 30| 	e_counter 	 |  LaTeX Error: No counter '10' defined. 	|Counter undefined
 31| 	e_outer 	 |  LaTeX Error: Not in outer par mode. 	|Using figure inside parbox
-32| 	e_minipage 	 |  LaTeX Error: Not in outer par mode. 	1Using figure minipage
+32| 	e_minipage 	 |  LaTeX Error: Not in outer par mode. 	|Using figure minipage
 33| 	e_lost 	 |  LaTeX Error: Float(s) lost. 	|Counter undefined
 34| 	e_lonely 	 |  LaTeX Error: Lonely \item--perhaps a missing list environment. 	|Usage  of \item outside list environment
 35| 	e_parg 	 |  LaTeX Error: Missing p-arg in array arg. 	|Missing  p argument in tabular environment
@@ -113,7 +113,7 @@ S.No 	| Class 	| Error Message 	| Cause of Error
 53| 	e_environment 	 |  LaTeX Error: Environment ... undefined. 	|ndefined environment
 54| 	e_midline 	 |  LaTeX Error: \< in mid line 	|Command \< may appear only at the beginning of a line
 55| 	e_infinite 	|Goes into infinite loop 	|Usage  of \\strut\hrule
-```
+
 
 Fuente: http://www.cs.utexas.edu/~witchel/errorclasses.html
   
