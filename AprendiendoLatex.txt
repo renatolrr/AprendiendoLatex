@@ -15,8 +15,8 @@
 \setbeamertemplate{navigation symbols}{} % quitar simbolitos
 
 \title[Latex]{Aprendiendo Latex}
-\subtitle{LaTeX y Git aplicado a la investigaciÃ³n cientÃ­fica\\ (Darwin Aventur)}
-\author[Renato L. RamÃ­rez Rivero]
+\subtitle{LaTeX y Git aplicado a la investigación científica\\ (Darwin Aventur)}
+\author[Renato L. Ramírez Rivero]
 {renatolrr\\
 www.renatoramirez.com}
 
@@ -57,7 +57,7 @@ Fuente: Curso desarrollado por la Oficina de Software Libre Ugr
 }
 \end{frame}
 
-\section{Nociones bÃ¡sicas de LaTeX y su funcionamiento}
+\section{Nociones básicas de LaTeX y su funcionamiento}
 \subsection{Procesadores de textos y su historia.}
 
 \begin{frame}
@@ -72,7 +72,7 @@ Fuente: Curso desarrollado por la Oficina de Software Libre Ugr
   \frametitle{Consiguiendo e instalando LaTeX.}
   \begin{itemize}
   \item<1->{Instalando LaTeX en Windows.}
-  \item<2->{Â¿Problemas con la instalaciÃ³n de LaTeX?.}
+  \item<2->{¿Problemas con la instalación de LaTeX?.}
    \end{itemize}
 \end{frame}
 
@@ -85,7 +85,7 @@ Fuente: Curso desarrollado por la Oficina de Software Libre Ugr
   %\end{itemize}
 \end{frame}
 
-\section{Primeros pasos. Estructura y creaciÃ³n de documentos}
+\section{Primeros pasos. Estructura y creación de documentos}
 \subsection{El estado mental correcto.}
 \begin{frame}
   \frametitle{El estado mental correcto.}
@@ -96,9 +96,9 @@ Fuente: Curso desarrollado por la Oficina de Software Libre Ugr
   \end{itemize}
 \end{frame}
 
-\subsection{Estructura bÃ¡sica de un documento.}
+\subsection{Estructura básica de un documento.}
 \begin{frame}
-  \frametitle{Estructura bÃ¡sica de un documento.}
+  \frametitle{Estructura básica de un documento.}
  % \begin{itemize}
   %\item<1->{*}
   %\end{itemize}
@@ -109,17 +109,17 @@ Fuente: Curso desarrollado por la Oficina de Software Libre Ugr
   \frametitle{Creando contenido.}
   \begin{itemize}
   \item<1->{Creando contenido.}
-  \item<2->{CapÃ­tulos y secciones.}
+  \item<2->{Capítulos y secciones.}
   \item<3->{Entornos.}
-  \item<4->{FÃ³rmulas matemÃ¡ticas.}
+  \item<4->{Fórmulas matemáticas.}
   \end{itemize}
 \end{frame}
 
-\subsection{Crear un documento bÃ¡sico.}
+\subsection{Crear un documento básico.}
 \begin{frame}
   \frametitle{Procesadores de textos y su historia.}
   \begin{itemize}
-  \item<1->{Crear un documento bÃ¡sico.}
+  \item<1->{Crear un documento básico.}
   \end{itemize}
 \end{frame}
 
@@ -138,8 +138,8 @@ Fuente: Curso desarrollado por la Oficina de Software Libre Ugr
   \frametitle{Tipos de letra.}
   \begin{itemize}
   \item<1->{Tipos de letra.}
-  \item<2->{MÃ¡s tipos de letra.}
-  \item<3->{Cambiado el tamaÃ±o de la letra.}
+  \item<2->{Más tipos de letra.}
+  \item<3->{Cambiado el tamaño de la letra.}
   \item<4->{Unidades de medida.}
   \end{itemize}
 \end{frame}
@@ -160,9 +160,9 @@ Fuente: Curso desarrollado por la Oficina de Software Libre Ugr
   %\end{itemize}
 \end{frame}
 
-\subsection{IntroducciÃ³n a las cajas.}
+\subsection{Introducción a las cajas.}
 \begin{frame}
-  \frametitle{IntroducciÃ³n a las cajas.}
+  \frametitle{Introducción a las cajas.}
    % \begin{itemize}
   %\item<1->{*}
   %\end{itemize}
@@ -172,12 +172,12 @@ Fuente: Curso desarrollado por la Oficina de Software Libre Ugr
 \begin{frame}
   \frametitle{Otros.}
   \begin{itemize}
-  \item<1->{Cambiando los mÃ¡rgenes de la pÃ¡gina.}
-  \item<2->{Indentado y espacios entre pÃ¡rrafos.}
+  \item<1->{Cambiando los márgenes de la página.}
+  \item<2->{Indentado y espacios entre párrafos.}
   \end{itemize}
 \end{frame}
 
-\section{AmpliaciÃ³n de entornos. FÃ³rmulas matemÃ¡ticas y sÃ­mbolos especiales.}
+\section{Ampliación de entornos. Fórmulas matemáticas y símbolos especiales.}
 
 \subsection{Tipos de documento: estilos.}
 \begin{frame}
@@ -192,41 +192,41 @@ Fuente: Curso desarrollado por la Oficina de Software Libre Ugr
   \frametitle{Otros.}
   \begin{itemize}
   \item<1->{Otros.}
-  \item<2->{Partes de un documento: mÃ¡s entornos.}
-  \item<3->{Tipos de letras en fÃ³rmulas matemÃ¡ticas.}
-  \item<4->{SÃ­mbolos encima de otros.}
+  \item<2->{Partes de un documento: más entornos.}
+  \item<3->{Tipos de letras en fórmulas matemáticas.}
+  \item<4->{Símbolos encima de otros.}
   \item<5->{Enfatizado.}
   \item<6->{El uso de las llaves.}
   \item<7->{Paquete amsfonts.}
   \item<8->{Comandos propios.}
-  \item<9->{MÃ¡s sobre tablas y cajas.}
+  \item<9->{Más sobre tablas y cajas.}
   \end{itemize}
 \end{frame}
 
-\subsection{Cambiando los mÃ¡rgenes de la pÃ¡gina.}
+\subsection{Cambiando los márgenes de la página.}
 \begin{frame}
-  \frametitle{Cambiando los mÃ¡rgenes de la pÃ¡gina.}
+  \frametitle{Cambiando los márgenes de la página.}
    % \begin{itemize}
   %\item<1->{*}
   %\end{itemize}
 \end{frame}
 
-\subsection{InserciÃ³n de grÃ¡ficos.}
+\subsection{Inserción de gráficos.}
 \begin{frame}
-  \frametitle{InserciÃ³n de grÃ¡ficos.}
+  \frametitle{Inserción de gráficos.}
    % \begin{itemize}
   %\item<1->{*}
   %\end{itemize}
 \end{frame}
 
-\section{BibliografÃ­a.}
+\section{Bibliografía.}
 
-\subsection{CreaciÃ³n de bases de datos para BibTeX.}
+\subsection{Creación de bases de datos para BibTeX.}
 \begin{frame}
-  \frametitle{CreaciÃ³n de bases de datos para BibTeX.}
+  \frametitle{Creación de bases de datos para BibTeX.}
    \begin{itemize}
-   \item<1->{CreaciÃ³n de bases de datos para BibTeX.}
-   \item<2->{GestiÃ³n de base de datos.}
+   \item<1->{Creación de bases de datos para BibTeX.}
+   \item<2->{Gestión de base de datos.}
   \end{itemize}
 \end{frame}
 
@@ -238,17 +238,17 @@ Fuente: Curso desarrollado por la Oficina de Software Libre Ugr
   %\end{itemize}
 \end{frame}
 
-\subsection{InserciÃ³n en un documento.}
+\subsection{Inserción en un documento.}
 \begin{frame}
-  \frametitle{InserciÃ³n en un documento.}
+  \frametitle{Inserción en un documento.}
    % \begin{itemize}
   %\item<1->{*}
   %\end{itemize}
 \end{frame}
 
-\subsection{BibliografÃ­a sobre BibTeX.}
+\subsection{Bibliografía sobre BibTeX.}
 \begin{frame}
-  \frametitle{BibliografÃ­a sobre BibTeX.}
+  \frametitle{Bibliografía sobre BibTeX.}
    % \begin{itemize}
   %\item<1->{*}
   %\end{itemize}

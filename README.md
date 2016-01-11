@@ -8,5 +8,4 @@ Ejercicios de Latex:
 4. Cómo hacer un curriculum con LaTeX  
 5. Presenatciones (beamer) 
 6. Conceptos básicos de formateado de texto  
-
-
+7. El entorno multicolumn  
