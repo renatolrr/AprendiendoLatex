@@ -2,12 +2,12 @@
   
 ##Bajar:
 
-[MiKTeX Portable](http://miktex.org/portable)
-[Texmaker USB](http://www.xm1math.net/texmaker/texmakerwin32usb.zip)
+[MiKTeX Portable](http://mirrors.ctan.org/systems/win32/miktex/setup/miktex-portable-2.9.5719.exe)  
+[Texmaker USB](http://www.xm1math.net/texmaker/texmakerwin32usb.zip)  
   
-
+  
 ##Configuar Texmarker con la ruta de nuestra carpeta MiKTex:  
-
+  
 ![TexmakerConfiguration](Images/TexmakerConfiguration.gif)
  
 ```
