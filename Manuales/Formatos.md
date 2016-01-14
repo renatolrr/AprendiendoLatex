@@ -435,7 +435,7 @@ Este entorno acepta muchas más opciones y modificadores. En capítulos sucesivo
 Ya vimos cómo, al declarar el tipo de documento, podíamos asignar el formato del papel que usaríamos. Usando ese dato y el tipo del documento, y con la autonomía a la que ya nos tiene acostumbrados, LaTeX calculará automáticamente los márgenes necesarios en la página.
 
 Pero, si por alguna razón queremos forzar otra medida, el paquete anysize puede solucionarlo de un modo simple y cómodo. Para ello debe llamarse al paquete en el preámbulo como ya hemos visto en otros casos:
-``
+```
 \usepackage{anysize}
 ```
 Despues, sólo tenemos que llamar (también en el preámbulo) a la orden \marginsize del siguiente modo:
