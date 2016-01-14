@@ -14,82 +14,46 @@ LaTeX soporta una serie de tipografías (tipos de letra) que pueden asignarse a 
 Cuando introducimos en el texto uno de estos comandos, modificará todo el texto subsiguiente, hasta que llegue a otro comando que vuelva a cambiarlo. Este no es un comportamiento demasiado eficiente, por lo que el modo adecuado para cambiar la tipográfica un pequeño trozo de texto es encerrarlo entre llaves junto con el comando del siguiente modo:
 ```
 \documentclass[a4paper,11pt]{article}
-
 \usepackage[utf8]{inputenc}
-
 \usepackage[spanish]{babel}
-
 \begin{document}
-
 {\rm Roman} (redonda seriff, la tipografía normal).
-
 {\em Italic} (cursiva).
-
 {\bf Boldface} (negrita).
-
 {\sl Slanted} (inclinada).
-
 {\sf Sans Serif} (sin seriff, de "palo seco").
-
 {\sc Small Caps} (todas mayúsculas, solo cambia el tamaño).
-
 {\tt Typewriter} (De "paso fijo" o monotype).
-
 \end{document}
 ```
 
 Esto es válido si el texto a modificar es relativamente corto. Para partes mayores o más complejas es mejor usar (como no), un entorno:
 ```
 \documentclass[a4paper,11pt]{article}
-
 \usepackage[utf8]{inputenc}
-
 \usepackage[spanish]{babel}
-
 \begin{document}
-
 \begin{rm}
-
 Roman (redonda seriff, la tipografía normal). Usando un entorno, que es más cómodo en estas circunstancias.
-
 \end{rm}
-
 \begin{em}
-
 Italic (cursiva). Usando un entorno, que es más cómodo en estas circunstancias.
-
 \end{em}
-
 \begin{bf}
-
 Boldface (negrita). Usando un entorno, que es más cómodo en estas circunstancias.
-
 \end{bf}
-
 \begin{sl}
-
 Slanted (inclinada). Usando un entorno, que es más cómodo en estas circunstancias.
-
 \end{sl}
-
 \begin{sf}
-
 Sans Serif (sin seriff, de "palo seco"). Usando un entorno, que es más cómodo en estas circunstancias.
-
 \end{sf}
-
 \begin{sc}
-
 Small Caps (todas mayúsculas, solo cambia el tamaño). Usando un entorno, que es más cómodo en estas circunstancias.
-
 \end{sc}
-
 \begin{tt}
-
 Typewriter (De "paso fijo" o monotype). Usando un entorno, que es más cómodo en estas circunstancias.
-
 \end{tt}
-
 \end{document}
 ````
 ##Más tipos de letra
@@ -117,25 +81,15 @@ Familias:
 Aunque los nombres son son algo más engorrosos, el uso es exactamente el mismo que hemos visto antes, con la salvedad de que estos comandos nos permiten combinar varias propiedades para, por ejemplo, escribir un texto en Sans Seriff cursiva:
 ```
 \documentclass[a4paper,11pt]{article}
-
 \usepackage[utf8]{inputenc}
-
 \usepackage[spanish]{babel}
-
 \begin{document}
-
 {\sffamily \itshape Familia Sans Seriff en cursiva.}
-
 \begin{rmfamily}
-
 \begin{bfseries}
-
 Familia Roman en negrita
-
 \end{bfseries}
-
 \end{rmfamily}
-
 \end{document}
 ```
 
@@ -152,23 +106,14 @@ Nota: Si hemos elegido en \documentclass un tamaño de 12pt, los tamaños \huge 
 El tamaño por defecto es, como su propio nombre indica, \normalsize. y será el que hayamos puesto en \documentclass o, en su defecto, de 10pt.
 ```
 \documentclass[a4paper,11pt]{article}
-
 \usepackage[utf8]{inputenc}
-
 \usepackage[spanish]{babel}
-
 \begin{document}
-
 {\scriptsize \itshape texto pequeño en cursiva.}
-
 Texto normal, con la medida por defecto (11 pt en nuestro caso, porque lo hemos declarado en el documentclass)
-
 \begin{Large}
-
 Texto en largue y, por tanto, grandote
-
 \end{Large}
-
 \end{document}
 ```
 
@@ -207,23 +152,14 @@ Una lista es, básicamente una sucesión de elementos colocados unos después de
 Para hacer una lista ordenada de elementos se usa el entorno enumerate de este modo:
 ```
 \documentclass[a4paper,11pt]{article}
-
 \usepackage[utf8]{inputenc}
-
 \usepackage[spanish]{babel}
-
 \begin{document}
-
 \begin{enumerate}
-
  \item Primer elemento de la lista
-
  \item Segundo elemento de la lista
-
  \item Tercer elemento de la lista
-
 \end{enumerate}
-
 \end{document}
 ```
 
@@ -234,39 +170,22 @@ Como ya nos tiene acostumbrados, LaTeX asigna por sí mismo los números (o letr
 Naturalmente, las listas pueden anidarse unas dentro de otras para profundizar niveles. Para ello sólo hay que crear otro entorno enumerate dentro del anterior:
 ```
 \documentclass[a4paper,11pt]{article}
-
 \usepackage[utf8]{inputenc}
-
 \usepackage[spanish]{babel}
-
 \begin{document}
-
 \begin{enumerate}
-
  \item Primer elemento de la lista
-
  \item Segundo elemento de la lista
-
  \begin{enumerate}
-
  \item Primer elemento en el segundo nivel
-
  \begin{enumerate}
-
  \item Primer elemento en el tercer nivel
-
  \item Segundo elemento en el tercer nivel
-
  \end{enumerate}
-
  \item Segundo elemento en el segundo nivel
-
  \end{enumerate}
-
  \item Tercer elemento de la lista
-
 \end{enumerate}
-
 \end{document}
 ```
 
@@ -275,78 +194,44 @@ Como puedes ver en el resultado compilado, LaTeX identifica los distintos nivele
 Para listas sin ordenar (esto es: no numeradas) se utiliza el entorno itemize exactamente del mismo modo que hemos visto el anterior:
 ```
 \documentclass[a4paper,11pt]{article}
-
 \usepackage[utf8]{inputenc}
-
 \usepackage[spanish]{babel}
-
 \begin{document}
-
 \begin{itemize}
-
  \item Primer elemento de la lista
-
  \item Segundo elemento de la lista
-
  \begin{itemize}
-
  \item Primer elemento en el segundo nivel
-
  \begin{itemize}
-
  \item Primer elemento en el tercer nivel
-
  \item Segundo elemento en el tercer nivel
-
  \end{itemize}
-
  \item Segundo elemento en el segundo nivel
-
  \end{itemize}
-
  \item Tercer elemento de la lista
-
 \end{itemize}
-
 \end{document}
 ```
 
 Por supuesto, es posible combinar ambos entornos anidando unos dentro de otros:
 ```
 \documentclass[a4paper,11pt]{article}
-
 \usepackage[utf8]{inputenc}
-
 \usepackage[spanish]{babel}
-
 \begin{document}
-
 \begin{itemize}
-
  \item Primer elemento de la lista
-
  \item Segundo elemento de la lista
-
  \begin{enumerate}
-
  \item Primer elemento en el segundo nivel
-
  \begin{itemize}
-
  \item Primer elemento en el tercer nivel
-
  \item Segundo elemento en el tercer nivel
-
  \end{itemize}
-
  \item Segundo elemento en el segundo nivel
-
  \end{enumerate}
-
  \item Tercer elemento de la lista
-
 \end{itemize}
-
 \end{document}
 ```
 ## Introducción a las cajas
@@ -358,29 +243,19 @@ También es posible trabajar con estas cajas directamente.
 El comando \mbox simplemente creará una caja con el texto que se le indique entre las llaves, y \fbox hará lo mismo pero con un marco alrededor de la caja:
 ```
 \documentclass[a4paper,11pt]{article}
-
 \usepackage[utf8]{inputenc}
-
 \begin{document}
-
 \mbox{este texto NO está enmarcado}
-
 \fbox{pero este texto está enmarcado}
-
 \end{document}
 ```
 Para tener más control sobre estas cajas, se pueden usarl los comandos \makebox y \framebox, que funcionan igual que los anteriores, pero permiten definir el tamaño de la caja y la alineación del texto en ella:
 ```
 \documentclass[a4paper,11pt]{article}
-
 \usepackage[utf8]{inputenc}
-
 \begin{document}
-
 \makebox[15cm][r]{Caja de 15 centímetros con texo a la derecha}
-
 \framebox[15cm][s]{Caja de 15 centímetros con texo justificado}
-
 \end{document}
 ```
 
@@ -389,15 +264,10 @@ El primer parámetro opcional el el ancho de la caja (si es menor que el texto, 
 Un par de comandos muy interesantes para este contexto son \width, que nos devuelve el ancho del elemento y \height, que nos dá el alto. Ambos pueden ser usados como parámetros. Mucho más útil es \linewidth, que nos da el ancho total de la línea, y que se podría usar del siguiente modo:
 ```
 \documentclass[a4paper,11pt]{article}
-
 \usepackage[utf8]{inputenc}
-
 \begin{document}
-
 \framebox[0.5\linewidth][c]{Caja de 1/2 del ancho total}
-
 \framebox[0.5\linewidth][c]{Caja de 1/2 del ancho total}
-
 \end{document}
 ```
 
@@ -408,23 +278,14 @@ Pero esto sólo nos permite hacer cajas de una línea. Para hacer cajas con pár
 El entorno minipage nos crea, como su propio nombre indica, una caja que actúa como una página en miniatura.
 ```
 \documentclass[a4paper,11pt]{article}
-
 \usepackage[utf8]{inputenc}
-
 \begin{document}
-
 \begin{minipage}[b]{0.5\linewidth}
-
 Una caja con minipage
-
 \end{minipage}
-
 \begin{minipage}[b]{0.5\linewidth}
-
 Otra caja con minipage
-
 \end{minipage}
-
 \end{document}
 ```
 
@@ -445,31 +306,18 @@ Despues, sólo tenemos que llamar (también en el preámbulo) a la orden \margin
 Veámoslo con un ejemplo:
 ```
 \documentclass[a4paper,11pt]{article}
-
 \usepackage[utf8]{inputenc}
-
 \usepackage[spanish]{babel}
-
 \usepackage{anysize} 
-
 \marginsize{2cm}{2cm}{2cm}{2cm} 
-
 \begin{document}
-
 \tableofcontents
-
 \section{Una sección}
-
 Texto de relleno bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-
 section{Otra sección}
-
 Texto de relleno bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-
 \section{Y otra sección}
-
 Texto de relleno bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-
 \end{document}
 ```
 
@@ -496,23 +344,14 @@ El comando \parskip se comporta exactamente igual, pero se aplica al espacio ent
 Ambos deben ser usados en el preámbulo del documento, de este modo:
 ```
 \documentclass[a4paper,11pt]{article}
-
 \usepackage[utf8]{inputenc}
-
 \usepackage[spanish]{babel}
-
 \parindent 2cm
-
 \parskip=2cm
-
 \begin{document}
-
 Párrafo perfectamente normal, que colocamos sólo par poder ver el efecto que tienen los cambios en los márgenes y espacios. Naturalmente, harán falta dos o tres como este.
-
 Párrafo perfectamente normal, que colocamos sólo par poder ver el efecto que tienen los cambios en los márgenes y espacios. Naturalmente, harán falta dos o tres como este.
-
 Párrafo perfectamente normal, que colocamos sólo par poder ver el efecto que tienen los cambios en los márgenes y espacios. Naturalmente, harán falta dos o tres como este.
-
 \end{document}
 ```
 ## Tipos de letras en fórmulas matemáticas
@@ -547,46 +386,6 @@ Maquina
 9
 ```
 Recordamos que \: es insertar un espacio pequeño en el entorno matemático.
-
-## Símbolos encima de otros
-
-Comandos del paquete amsmath:
-
-Recordamos que tendremos que añadir al inicio de nuestro documento.
-```
-\usepackage{amsmath}
-
-    \overset{algo encima de}{algo}
-```
-Vamos a colocar texto encima de unas flechas.
-```
-$\overset{OSL}{\Longleftarrow\Longrightarrow}$
-```
-Simbolo sobre simbolo
-```
-    \underset{algo debajo de}{algo}
-```
-Vamos a colocar texto debajo de unas flechas.
-```
-$\underset{OSL}{\Longleftarrow\Longrightarrow}$
-```
-Simbolo debajo de simbolo
-```
-    \xrightarrow[algo debajo]{algo encima}
-```
-Produce una flecha que apunta a la derecha y tiene algo encima y algo debajo, siendo éste último un argumento opcional. La longitud de la flecha se adapta automáticamente.
-```
-$\xrightarrow[OSL]{LSO}$
-```
-Algo debajo, algo encima
-```
-    \xleftarrow[algo debajo]{algo encima}
-```
-Produce una flecha que apunta a la izquierda y tiene algo encima y algo debajo, siendo éste último un argumento opcional. La longitud de la flecha se adapta automáticamente.
-```
-$\xleftarrow[LSO]{OSL}$
-```
-Algo debajo, algo encima
 
 ##Enfatizado
 
@@ -633,10 +432,7 @@ http://detexify.kirelabs.org/classify.html
 
 ##Más tablas y cajas
 
-
-
 La instrucción \multicolumn nos permite modificar dentro del entorno tabular la estructura inicial de columnas; con el podemos textos que ocupan mas de una columna.
-
 
 La estructura del comando es la siguiente:
 
@@ -666,18 +462,12 @@ Para ver cómo funcionan estos comandos, habrá que crear antes una tabla:
 
 ```
 \begin{center}
-
 \begin{tabular}{|c|c|c|}
 \hline \multicolumn{2}{|c|}{Celda 11 y 12} & Celda 13 \
-
 \hline Celda 21 & \multirow{2}{*}{Celdas 22 y 32} & Celda 23\\cline{1-1}
-
 \cline{3-3}Celda 31 & & Celda 33 \
-
 \hline
-
 \end{tabular}
-
 \end{center}
 ```
 
