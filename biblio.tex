@@ -1,0 +1,25 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+\usepackage[left=2.50cm, right=2.50cm, top=2.50cm, bottom=2.50cm]{geometry}
+\begin{document}
+	\title{Jugando con la bibliografía}
+	\author{PMA}
+	\date{\today}
+	\maketitle
+	
+
+Los libros \cite{Cepeda2013} y \cite{Cisneros1984} son libros. \\ \\
+
+Por su parte, \cite{Montero1988} y \cite{Montero2005} son dos libros de Rosa Montero. \\ \\
+
+Como estilo de bibliografía, he usado ACM para que el apellido de los autores salga en versalita. 
+	\bibliographystyle{acm}
+	\bibliography{montero}
+\end{document}
